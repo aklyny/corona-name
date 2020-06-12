@@ -1,0 +1,31 @@
+@import "scoll.css";
+@import "footer.css";
+body{
+	background: url(../pics/bac.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+::-webkit-scrollbar{
+	width:12px;
+	background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent,#30ff00);
+    border-radius:6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent,#00c6ff);
+}
+.da{
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	color: #fff;
+}
+.jumbotron h1{
+	color: white;
+}

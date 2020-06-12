@@ -1,0 +1,38 @@
+.flip-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.flip {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-out;
+  width: 100%;
+}
+.flip:hover {
+  transform: rotateY(180deg);
+}
+.flip .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: url('https://images.pexels.com/photos/3426891/pexels-photo-3426891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  position: center center !important;
+}
+.flip .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
